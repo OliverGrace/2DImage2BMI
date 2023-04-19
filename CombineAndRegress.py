@@ -63,7 +63,7 @@ class Dataset(data.Dataset):
         return (Pic, Pic_name, img_name, sex, age, height, weight), BMI
 
 
-def CombineDFBF(model, BodyFeatures, df, loader_test, loader_train):
+def CombineDFBF(model, BodyFeatures, df, loader_test, loader_train): # Combine Deep Features and Body Features
     # test(model, DEVICE, loader_test)
     loaders = [ loader_test, loader_train,]
     files = [ 'test', 'train',]
